@@ -6,12 +6,19 @@ body {
 	margin: 0;
 }
 
+.background {
+	background-image: url('assets/hot.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 /*########## Header ########## */
 .header {
 	align-items: center;
-	background-color: black;
+	background-color: darkslategray;
 	display: flex;
-	opacity: 50%;
+	opacity: 70%;
 	padding: 1rem;
 }
 
@@ -23,12 +30,14 @@ body {
 }
 
 /*########## Navigation Links ########## */
+/*
 .nav-link {
 	color: white;
 	font-family: "Spirax", sans-serif;
 	font-size: xx-large;
 	text-decoration: none;
 }
+*/
 
 nav a {
 	color: white;
@@ -44,28 +53,35 @@ nav a:hover {
 /*########## Container ########## */
 .container {
 	display: flex;
+	min-height: 100vh;
 }
 
 /*########## Container > Main Content ########## */
 .container .main-content {
 	padding: 2rem;
+	justify-content: center;
+	flex: 1;
 }
 
 h1 {
 	color: red;
 	font-family: Spirax;
 	font-size: xxx-large;
+	text-align: center;
 }
 
 h2 {
 	background-color: red;
-	font-family: Poiret One;
-	font-size: x-large;
+	font-size: large;
+	opacity: 70%;
 	padding: 1rem 4rem;
+	text-align: center;
 }
 
 h3 {
 	background-color: black;
-	opacity: 50%;
+	font-size: medium;
+	opacity: 70%;
 	padding: 1rem;
+	text-align: center;
 }
