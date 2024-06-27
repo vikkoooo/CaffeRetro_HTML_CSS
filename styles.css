@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Spirax&display=swap");
 
-body {
-	color: white;
+* {
+	color: whitesmoke;
 	font-family: "Poiret One", sans-serif;
-	margin: 0;
 }
 
-.background {
-	background-image: url('assets/hot.jpg');
+body {
+	margin: 0;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 /*########## Header ########## */
@@ -28,7 +28,7 @@ body {
 	justify-content: space-evenly;
 }
 
-.empty-space {
+.header .empty-space {
 	flex: 1;
 }
 
@@ -47,49 +47,60 @@ nav a:hover {
 /*########## Container ########## */
 .container {
 	display: flex;
-	min-height: 100vh;
-}
-
-/*########## Container > Main Content ########## */
-.container .main-content {
-	padding: 2rem;
 	justify-content: center;
-	flex: 1;
 }
 
-h1 {
+.container .main-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.container .main-content .title h1 {
 	color: #8d0001;
 	font-family: Spirax;
 	font-size: xxx-large;
 	text-align: center;
 }
 
-h2 {
+.container .main-content .quote1 {
 	background-color: rgb(141, 0, 1, 0.8);
+	padding: 0rem 4rem;
+	position: relative;
+	left: -3rem;
+}
+
+.container .main-content .quote1 h2 {
 	font-size: large;
-	padding: 1rem 4rem;
 	text-align: center;
 }
 
-h3 {
+.container .main-content .quote2 {
+	background-color: rgb(141, 0, 1, 0.8);
+	padding: 0rem 4rem;
+	position: relative;
+	left: 3rem;
+}
+
+.container .main-content .quote2 h2 {
+	font-size: large;
+	text-align: center;
+}
+
+.container .main-content .price-contact {
 	background-color: rgb(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: space-between
+}
+
+.container .main-content .price-contact .menu-items {
 	font-size: medium;
-	padding: 0.2rem;
-	text-align: center;
+	text-align: left;
+	padding: 0rem 2rem;
 }
 
-.quote {
-	display: flex;
-	justify-content: space-evenly;
-	flex: 1;
-}
-
-.price-contact {
-	display: flex;
-	justify-content: space-evenly;
-	flex: 1;
-}
-
-p {
+.container .main-content .price-contact .menu-prices {
+	font-size: medium;
+	text-align: right;
 	padding: 0rem 2rem;
 }
