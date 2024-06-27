@@ -56,6 +56,12 @@ nav a:hover {
 	display: flex;
 	justify-content: center;
 	padding-top: 91px;
+
+}
+
+.hot,
+.juicy {
+	border-bottom: 1rem solid #8d0001;
 }
 
 .container .main-content {
