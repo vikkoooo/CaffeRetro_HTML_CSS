@@ -19,6 +19,10 @@ body {
 	background-color: rgb(17, 1, 9, 0.8);
 	display: flex;
 	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .header .navbar {
@@ -48,6 +52,7 @@ nav a:hover {
 .container {
 	display: flex;
 	justify-content: center;
+	padding-top: 4.4rem;
 }
 
 .container .main-content {
