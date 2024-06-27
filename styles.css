@@ -59,8 +59,8 @@ nav a:hover {
 
 }
 
-.hot,
-.juicy {
+#hot,
+#juicy {
 	border-bottom: 1rem solid #8d0001;
 }
 
